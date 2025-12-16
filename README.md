@@ -8,9 +8,9 @@ This includes daily updates of CCNP Enterprise's Labs and Theories.
 
 According to this lab, we want to make a connection between PC_0 and PC_1 and we use static routes for all routers and setting AD number - 2 for the backup route which is also called AD Tuning. 
 
-Command Line: ip route (destination network) (subnetmask) (next hop / interface name) 2-255
+`ip route (destination network) (subnetmask) (next hop / interface name) 2-255`
 
-Where do we use the Administrative Distance? 
+**Where do we use the Administrative Distance?**
 - We use AD number in choosing of best route including backup route.
 - We use AD number in comparing of Routing Protocol (i.e. Three routers running both OSPF and EIGRP, we want to choose EIGRP route for these three routers, we compare AD numbers at that time. So AD number of EIGRP is 90 / 170 which AD number of OSPF is 110. Routers will choose EIGRP for routing)
  
@@ -20,7 +20,7 @@ Where do we use the Administrative Distance?
 
 On day 2, we discussed about the details of RIP routing protocol. 
 
-RIP V1 
+**RIP V1**
 
 - RIP is Open Standard Protocol.
 - RIP v1 is a classfull routing protocol which doesn't carry subnet mask information along with the updates. So the disadvantage is when we use classless address there will become a problem in ruinning of classless protocol.
@@ -33,6 +33,10 @@ RIP V1
 
 `show ip protocol (Checking which routing protocol is running on routers)`
 
+![Day2 UI](https://github.com/Htin2001/CCNP-Enterprise/blob/388f43b6e191c5ebed437ace9c90758b16f1b286/Sending%20updates%20every%2030%20seconds%2C%20next%20due%20in%204%20seconds.heic)
+- Invalid after = hold down = flushed after = 240 sec means that RIP routing status will be updated only after 240 sec even RIP protocol is down under 240 sec. But we can change by following commend but **set the commend in both routers**.
+
+`timers basic (update timer) (invalid) (holddown) (flush)` 
 
 RIP V2 
 
