@@ -36,7 +36,14 @@ On day 2, we discussed about the details of RIP routing protocol.
 
 `show ip protocol (Checking which routing protocol is running on routers)`
 
-![Day2 UI](https://github.com/Htin2001/CCNP-Enterprise/blob/388f43b6e191c5ebed437ace9c90758b16f1b286/Sending%20updates%20every%2030%20seconds%2C%20next%20due%20in%204%20seconds.heic)
+<table>
+  <tr>
+    <td style="border:20px double black; padding:6px;">
+      <img src="Sending updates every 30 seconds, next due in 4 seconds.heic" alt="Topology">
+    </td>
+  </tr>
+</table>
+
 - Invalid after = hold down = flushed after = 240 sec means that RIP routing status will be updated only after 240 sec even RIP protocol is down under 240 sec. But we can change by following command but **set the commend in both routers**.
 
 `timers basic (update timer) (invalid) (holddown) (flush)` 
