@@ -102,5 +102,25 @@ On day 2, we discussed about the details of RIP routing protocol.
 
 `passive-interface (interface name)`
 
- 
- 
+
+**RIP V2 Authentication**
+
+- Configure R1 and R2 to exchange the routes only after successful authentication.
+
+For R1 and R2
+
+`Key Chain (Key Chain Name - Can different)`
+
+`Key (Number - should be same)`
+
+`Key-string (password - should be same)`
+
+For Interfaces between each router 
+
+`interface (interface name)`
+
+`ip rip authentication mode md5`
+
+`ip rip authentication key-chain (Key Chain Name)` 
+
+
