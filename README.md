@@ -5,7 +5,7 @@ This includes daily updates of CCNP Enterprise's Labs and Theories.
 
 # Day 1 (Static Route with AD Tuning)
 ![Day 1 UI](https://github.com/Htin2001/CCNP-Enterprise-/blob/ee511024c0821c6bcac03a9a09ce0bf263574e98/Day%201.png)
-**Download Lab File**
+**Download Lab File (Packet Tracer File)**
 [Day1 - Path Determination Lab](https://github.com/Htin2001/CCNP-Enterprise/blob/0808fb684c1ed7f3fd19f70b78272796320a52c4/Path%20Determination%20(Htin%20Aung%20Lin).pkt) 
 
 According to this lab, we want to make a connection between PC_0 and PC_1 and we use static routes for all routers and setting AD number - 2 for the backup route which is also called AD Tuning. 
@@ -19,6 +19,9 @@ According to this lab, we want to make a connection between PC_0 and PC_1 and we
 
 # Day 2 (RIP Route - RIPv2 Authentication - Accesslist)
 
+![Day 2 UI](https://github.com/Htin2001/CCNP-Enterprise/blob/c6020fc5813872bd6a2583025fe942d92ed83612/RIPv2.png)
+
+**Download Lab File (Eve File)**
 
 On day 2, we discussed about the details of RIP routing protocol. 
 
@@ -124,3 +127,4 @@ For Interfaces between each router
 `ip rip authentication key-chain (Key Chain Name)` 
 
 
+***According to our lab, we set up RIP v2 routing on all routers (R1,R2,R3) and we set authentication mode on between R2 and R3. And also we set R2's ethernet 0/0 interface as passive interface. At this point R3 stills get routing updates from R1 like (10.0.0.0/30 and 192.168.1.0/24 which can be regarded as loopback and if R1 is a external untrusted network, R3 will become a problem with huge memories. To advoid this we write access-list in R3 router which can see in the Day 2 lab picture.***
