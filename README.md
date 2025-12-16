@@ -3,7 +3,7 @@ CCNP Labs / Theories
 
 This includes daily updates of CCNP Enterprise's Labs and Theories.
 
-# Day 1
+# Day 1 (Static Route with AD Tuning)
 ![Day 1 UI](https://github.com/Htin2001/CCNP-Enterprise-/blob/ee511024c0821c6bcac03a9a09ce0bf263574e98/Day%201.png)
 
 According to this lab, we want to make a connection between PC_0 and PC_1 and we use static routes for all routers and setting AD number - 2 for the backup route which is also called AD Tuning. 
@@ -14,3 +14,43 @@ Where do we use the Administrative Distance?
 - We use AD number in choosing of best route including backup route.
 - We use AD number in comparing of Routing Protocol (i.e. Three routers running both OSPF and EIGRP, we want to choose EIGRP route for these three routers, we compare AD numbers at that time. So AD number of EIGRP is 90 / 170 which AD number of OSPF is 110. Routers will choose EIGRP for routing)
  
+
+# Day 2 (RIP Route - RIPv2 Authentication - Accesslist)
+
+
+On day 2, we discussed about the details of RIP routing protocol. 
+
+RIP V1 
+
+- RIP is Open Standard Protocol.
+- RIP v1 is a classfull routing protocol which doesn't carry subnet mask information along with the updates. So the disadvantage is when we use classless address there will become a problem in ruinning of classless protocol.
+- Updates are broadcasted via 255.255.255.255
+- Administrative distance is 120
+- Max Hop Counts : 15
+- Load Balancing of 4 equal paths mean that load balancing in 60-40 or 80-20
+- Used for Small organization
+- Periodic updates and Exchange entire routing for every 30 seconds but we can change them. The commend -
+
+`show ip protocol (Checking which routing protocol is running on routers)`
+
+
+RIP V2 
+
+- Classless routing protocol
+- Supports VLSM
+- Supports authentication
+- Uses multicast address 224.0.0.9
+
+Adv of RIP 
+
+- Easy to Configure
+- No design constraints like OSPF protocol
+- No complexity
+- Less overhead
+
+Disadv of RIP 
+
+- Bandwidth utilization is very high as broadcast for every 30 seconds
+- Works only on hop count (not consider the Bandwidth)
+- Not scalable as hop count is only 15 which mean if we want to extend the network, we can't.
+- Slow convergence 
