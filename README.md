@@ -22,6 +22,7 @@ According to this lab, we want to make a connection between PC_0 and PC_1 and we
 ![Day 2 UI](https://github.com/Htin2001/CCNP-Enterprise/blob/c6020fc5813872bd6a2583025fe942d92ed83612/RIPv2.png)
 
 **Download Lab File (Eve File)**
+[Day 2 RIP - RIPv2 Authentication Lab](https://github.com/Htin2001/CCNP-Enterprise/blob/f4fb155d218f9d45e06e026d102d81d34ddd4847/RIP%20_%20RIPv2%20Authenticatioin%20Lab.zip)
 
 On day 2, we discussed about the details of RIP routing protocol. 
 
