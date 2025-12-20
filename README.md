@@ -99,7 +99,7 @@ On day 2, we discussed about the details of RIP routing protocol.
 `logging synchronous`
 
 
-**If we do not want to provide routing updates for unnecessery interface in router**
+**If we do not want to send routing updates for unnecessery interface in router but still receiving routing updates**
 
 
 `router rip`
