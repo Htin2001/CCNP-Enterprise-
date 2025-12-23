@@ -152,7 +152,7 @@ For Interfaces between each router
 **Different types for controlling routing update traffic**
 
 - Passive Interface
-  - Passive - interface command is used in all routing protocols to **disable sending updates** out from a specific interface. Since RIPv2        **doesn’t send ‘Hello packets’**, passive interface only work on RIPv2 not for RIPv1.
+  - Passive - interface command is used in all routing protocols to **disable sending updates**      out from a specific interface. Since RIPv2 **doesn’t send ‘Hello packets’**, passive             interface only work on RIPv2 not for RIPv1.
 - Distribution-lists
 - IP - Prefix -list
 - Route - maps
@@ -184,7 +184,9 @@ For Interfaces between each router
 - Use with **an access list or route map or prefix-list** to permit or deny routes
 - Can be applied to **transmitted, received, or redistributed routing updates**
 
+**Filtering Routing Updates with a Distribute List**
 
+![Day 3 Filtering Routing Updates with a Distribute List]
 
 ----------------------------------------
 **Running Passive Interface in EIGRP**
