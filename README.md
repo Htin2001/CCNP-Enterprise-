@@ -129,3 +129,29 @@ For Interfaces between each router
 
 
 ***According to our lab, we set up RIP v2 routing on all routers (R1,R2,R3) and we set authentication mode on between R2 and R3. And also we set R2's ethernet 0/0 interface as passive interface. At this point R3 stills get routing updates from R1 like (10.0.0.0/30 and 192.168.1.0/24 which can be regarded as loopback and if R1 is a external untrusted network, R3 will become a problem with huge memories. To advoid this we write access-list in R3 router which can see in the Day 2 lab picture or set R2's ethernet0/0 interface as RIP v2 authentication.***
+
+
+# Day 3 
+
+**Controlling Routing Update Traffic**
+
+- You might need to control exactly which routes are advertised or redistributed, or which paths are chosen (Like Policy Based Routing)
+- Advertised only some specific Routes to Neighbor
+- Redistribute Specific Routes
+- Preventing Routing loops
+- Path Manipulation of some specific Routes
+- Changing Metric and Metric-type fro sepcific routes
+- Changing the Administrative Distance for Specific Routes
+- With BGP
+  - Controlling routes to be advertised to ISP
+  - Control routes to get in to routing table
+- Policy Based Routing
+
+
+**Different types for controlling routing update traffic**
+
+- Passive Interface
+- Distribution-lists
+- IP - Prefix -list
+- Route - maps
+- Policy Based Routing
