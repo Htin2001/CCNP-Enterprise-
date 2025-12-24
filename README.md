@@ -136,6 +136,7 @@ For Interfaces between each router
 
 # Day 3 (Controlling Routing Updates | Distribute List) 
 
+![Day 3 Controlling Redistribution with distribute-list](https://github.com/Htin2001/CCNP-Enterprise/blob/ac53708250521983b20588c1b597374d99b0bee8/Controlling%20Redistribution%20with%20distribute-list.png)
 
 **Download Lab File (EVE file)** 
 [Day 3 Controlling Redistribution with distribute-list](https://github.com/Htin2001/CCNP-Enterprise/blob/678ac8f726fb874fc1ce9ed3e941493a32d56d95/Controlling%20redistribution%20with%20distribute-list.zip)
@@ -192,8 +193,7 @@ For Interfaces between each router
 
 ![Day 3 Filtering Routing Updates with a Distribute List](https://github.com/Htin2001/CCNP-Enterprise/blob/7814a477e2f2bd14b402f9ba0e97ed768f3bef55/Filtering%20routing%20updates%20with%20a%20distributed%20list.png)
 
-
-![Day 3 Controlling Redistribution with Distribute List](https://github.com/Htin2001/CCNP-Enterprise/blob/dc83ccc43c2d7f1239dacf597eac8a0b9f84febc/Controlling%20Redistribution%20with%20Distribute%20lists%20.png)
+![Day 3 Controlling Redistribution with distribute-list](https://github.com/Htin2001/CCNP-Enterprise/blob/dc83ccc43c2d7f1239dacf597eac8a0b9f84febc/Controlling%20Redistribution%20with%20Distribute%20lists%20.png)
 
 - According to the upper Redistribution diagram, Router B is processing on redistribion which means it has both RIP and OSPF routes.
 - If you want filter some routes in **OSPF** which going to RIP,the flow will
