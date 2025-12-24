@@ -136,6 +136,10 @@ For Interfaces between each router
 
 # Day 3 (Controlling Routing Updates | Distribute List) 
 
+
+**Download Lab File (EVE file)** 
+[Day 3 Controlling Redistribution with distribute-list](https://github.com/Htin2001/CCNP-Enterprise/blob/678ac8f726fb874fc1ce9ed3e941493a32d56d95/Controlling%20redistribution%20with%20distribute-list.zip)
+
 **Controlling Routing Update Traffic**
 
 - You might need to control exactly which routes are advertised or redistributed, or which paths are chosen (Like Policy Based Routing)
