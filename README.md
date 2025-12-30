@@ -272,13 +272,15 @@ For Interfaces between each router
 **Offset-list**
 
 - An offset-list is a way to increase the metric of routes
-- Only RIP and EIGRP support offset-list
+- Only **RIP and EIGRP** support offset-list
 
+
+----------------------------------------
 **Prefix-list Command** 
 
 `ip prefix-list (name) (seq no.) (permit or deny) (network with subnet or two components)` 
 
-`sh ip prefix-list (checking prefix-list)` 
+`sh ip prefix-list (checking prefix-list)`
 
 
 **Matching prefix-list with distribute-list** 
@@ -286,5 +288,18 @@ For Interfaces between each router
 `router rip or eigrp 100` 
 
 `distribute-list prefix (prefix-list's name) (in or out)` 
+
+
+**Offset-list Command**
+
+- When we use the offset-list, we have to use it with access-list. So, we need to set the          access-list first.
+
+`ip access-list (standard or extended) (name)`
+
+`permit (destination's network) (destination's wildcard mask)`
+
+`router rip or eigrp 100`
+
+`offset-list (access-list's name) in (numbers) (interface name)` 
 
 
