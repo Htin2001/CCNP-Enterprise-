@@ -239,5 +239,36 @@ For Interfaces between each router
 `distribute-list (access-list's no.) (in or out) (interface-name)`
 
 
+# Day 4 (Prefix-List | Offset-list)
+
+- Prefix-list is used when it is difficult to write with the access-list. If we need to write 5    access-list commands, we only need to write only **one or two commands** when we use prefix-     list
+- The IOS IP prefix-list another tool for matching routes
+- The command then sets either a deny or permit action for each matched prefix / length
+- Match **two components** of an IP route
+
+  - The route prefix (the subnet number i.e. 192.168.0.0)
+  - The prefix length (the subnet mask i.e. /24)
+  
+    - 10.0.0.0 /8 (Only that network)
+    - 10.0.0.0 /8 ge 9 (i.e. 10. x . x . x / 9-30)
+    - 10.0.0.0 /8 ge 24 le 24 (only /24 network)
+    - 10.0.0.0 /8 le 28 (i.e 10. x . x . x / 8-28)
+    - 0.0.0.0 /0 (Default route)
+    - 0.0.0.0 /0 le 32 (permit any)
+    - **10.0.0.0/16 le 16 (10 . 0 . x . x / le 16)**
+
+
+**Prefix-list Command** 
+
+`ip prefix-list (name) (seq no.) (permit or deny) (network with subnet or two components)` 
+
+`sh ip prefix-list (checking prefix-list)` 
+
+
+**Matching prefix-list with distribute-list** 
+
+`router rip or eigrp 100` 
+
+`distribute-list prefix (prefix-list's name) (in or out)` 
 
 
