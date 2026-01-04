@@ -116,11 +116,11 @@ On day 2, we discussed about the details of RIP routing protocol.
 
 For R1 and R2
 
-`Key Chain (Key Chain Name - Can different)`
+`Key Chain {Key Chain Name - Can different}`
 
-`Key (Number - should be same)`
+`Key {Number - should be same}`
 
-`Key-string (password - should be same)`
+`Key-string {password - should be same}`
 
 For Interfaces between each router 
 
@@ -287,11 +287,9 @@ For Interfaces between each router
 
 **VRF Lite (Virtual Routing and Forwarding)** 
 
-![Day 4 without VRF](https://github.com/Htin2001/CCNP-Enterprise/blob/2b5d96e63a6583d0567ee1daffb71e3f59f5457a/without%20vrf.png)
+<img width="385" height="267" alt="without vrf" src="https://github.com/user-attachments/assets/d10d6cfe-4b29-4c13-a109-f17d9e8a448a" />
 
-
-![Day 4 with VRF](https://github.com/Htin2001/CCNP-Enterprise/blob/54841f2892e258d1b3835408f2f1b31e1971f6ce/with%20vrf.png)
-
+<img width="376" height="249" alt="with vrf" src="https://github.com/user-attachments/assets/f20b247a-b1c1-48f2-a85a-e7e59e938f7b" />
 
 - Virtual routing and forwarding is a technology that creates separate virtual routers on a        physical **router** which means there will become a separate routing table which is also like    VLAN.
 - VRFs are commonly used for MPLS deployments (Layer 3 VPN), when we use VRFs without MPLS then    we call it VRF lite. 
@@ -301,7 +299,7 @@ For Interfaces between each router
 
 `ip prefix-list (name) (seq no.) (permit or deny) (network with subnet or two components)` 
 
-`sh ip prefix-list (checking prefix-list)`
+`sh ip prefix-list {checking prefix-list}`
 
 
 **Matching prefix-list with distribute-list** 
@@ -322,5 +320,58 @@ For Interfaces between each router
 `router rip or eigrp 100`
 
 `offset-list (access-list's name) in (numbers) (interface name)` 
+
+
+**Creating VRF tables**
+
+`ip vrf (name)` 
+
+`sh ip vrf {verifying vrf}`
+
+
+**Assign VRF tables to intterfaces**
+
+`int (int-name)` 
+
+`ip vrf forwarding (vrf_name)` 
+- If you assigned ip address in global routing table, we need to assign ip address for that interface because of enabling VRF.
+
+`show ip route vrf (vrf_name) {checking vrf routing table}`
+
+
+**Routing OSPF route with VRF** 
+
+`router ospf 1 vrf (vrf_name)
+...............................` 
+
+`router ospf 2 vrf (vrf_name)
+...............................` 
+
+- Noted that when we run the ospf, we need to use different ospf id for different vrfs.
+
+`show ip route vrf (vrf_name) ospf {Verifying OSPF route with VRF}`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
