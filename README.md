@@ -275,7 +275,7 @@ For Interfaces between each router
 
 **Download offset-list Lab (EVE file)** 
 
-- File
+[Day 4 Offest-list Lab](https://github.com/Htin2001/CCNP-Enterprise/blob/5cc5674e864c9d6803c41faeec99c7a3bd3c619d/Offset-list.zip)
 
   - According to the picture, traffic from R1 (source router) to Loopback 1, Loopback 2, and Loopback 3 (destination networks: 13.0.0.0/24, 13.1.0.0/24, and 13.2.0.0/24) normally passes through the 11.0.0.0/30,      11.0.0.4/30, and 12.0.0.0/30 networks because the upper path has a lower hop count and is therefore preferred by RIP. However, in this lab, an offset list is configured to increase the hop count of routes        learned via the 11.x.x.x networks, making the upper serial path less preferred. As a result, traffic is forced to use the lower path through the 10.x.x.x networks. Additionally, the lower path uses Ethernet      links, which provide higher bandwidth and lower latency compared to the upper serial links, making it a more desirable path from a performance perspective despite having more hops. 
 
