@@ -297,6 +297,7 @@ For Interfaces between each router
 
 **Download VRF with OSPF route lab file (EVE file)**
 
+[Day 4 VRF with OSPF route lab file](https://github.com/Htin2001/CCNP-Enterprise/blob/8507f9eabd94c76244b3e256d5b9d0230e7ae2db/VRF%20Lab.zip)
 
 
 <img width="385" height="267" alt="without vrf" src="https://github.com/user-attachments/assets/d10d6cfe-4b29-4c13-a109-f17d9e8a448a" />
