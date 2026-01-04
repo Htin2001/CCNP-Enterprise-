@@ -239,7 +239,9 @@ For Interfaces between each router
 `distribute-list (access-list's no.) (in or out) (interface-name)`
 
 
-# Day 4 (Prefix-List | Offset-list)
+# Day 4 (Prefix-List | Offset-list | VRF Lite)
+
+**Prefix-list**
 
 ![Day 4 prefix-list](https://github.com/Htin2001/CCNP-Enterprise/blob/125e6fd01ccb493c4c41022abe53839ddab3a0d1/prefix-list.png)
 
@@ -248,8 +250,6 @@ For Interfaces between each router
 [Day 4 prefix-list lab](https://github.com/Htin2001/CCNP-Enterprise/blob/b0f96b534eb3e8c68b56914cf7853fd18aa28ffc/Prefix-list%20lab.zip)
 
 - In this lab, we only allow to enter ( 10.0.0.0 / 18 - 20 ) in Nancy's router from Karen. We ran prefix-list command in Nancy's router. 
-
-**Prefix-list**
 
 
 - Prefix-list is used when it is difficult to write with the access-list. If we need to write 5    access-list commands, we only need to write only **one or two commands** when we use    prefix-list
@@ -282,7 +282,13 @@ For Interfaces between each router
 - An offset-list is a way to increase the metric of routes
 - Only **RIP and EIGRP** support offset-list
 - One thing we have to note that the best route will be chosen over the **lowest metric (RIP) or delay value (EIGRP)**
-- Offest-list only works with access-list 
+- Offest-list only works with access-list
+
+
+**VRF Lite (Virtual Routing and Forwarding)** 
+
+- Virtual routing and forwarding is a technology that creates separate virtual routers on a        physical **router** which means there will become a separate routing table which is also like    VLAN.
+- VRFs are commonly used for MPLS deployments (Layer 3 VPN), when we use VRFs without MPLS then    we call it VRF lite. 
 
 ----------------------------------------
 **Prefix-list Command** 
