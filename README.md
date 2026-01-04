@@ -290,12 +290,23 @@ For Interfaces between each router
 
 **VRF Lite (Virtual Routing and Forwarding)** 
 
+![VRF Blue](https://github.com/user-attachments/assets/54eec78a-9da4-4967-b693-7d1b1405cadf)
+
+
+![VRF Red](https://github.com/user-attachments/assets/72291cfe-4fd4-44a6-92e5-f19fc7bfff50)
+
+**Download VRF with OSPF route lab file (EVE file)**
+
+
+
 <img width="385" height="267" alt="without vrf" src="https://github.com/user-attachments/assets/d10d6cfe-4b29-4c13-a109-f17d9e8a448a" />
 
 <img width="376" height="249" alt="with vrf" src="https://github.com/user-attachments/assets/f20b247a-b1c1-48f2-a85a-e7e59e938f7b" />
 
-- Virtual routing and forwarding is a technology that creates separate virtual routers on a        physical **router** which means there will become a separate routing table which is also like    VLAN.
-- VRFs are commonly used for MPLS deployments (Layer 3 VPN), when we use VRFs without MPLS then    we call it VRF lite. 
+- Virtual routing and forwarding is a technology that creates separate virtual routers on a physical **router** which means there will become   a separate routing table which is also like    VLAN.
+- VRFs are commonly used for MPLS deployments (Layer 3 VPN), when we use VRFs without MPLS then we call it VRF lite.
+
+
 
 ----------------------------------------
 **Prefix-list Command** 
