@@ -4,7 +4,8 @@ CCNP Labs / Theories
 This includes daily updates of CCNP Enterprise's Labs and Theories.
 
 # Day 1 (Static Route with AD Tuning)
-![Day 1 UI](https://github.com/Htin2001/CCNP-Enterprise-/blob/ee511024c0821c6bcac03a9a09ce0bf263574e98/Day%201.png)
+<img width="1127" height="381" alt="Day 1" src="https://github.com/user-attachments/assets/23a8ca39-b7a2-4472-9904-e7de18b269b4" />
+
 **Download Lab File (Packet Tracer File)**
 [Day1 - Path Determination Lab](https://github.com/Htin2001/CCNP-Enterprise/blob/0808fb684c1ed7f3fd19f70b78272796320a52c4/Path%20Determination%20(Htin%20Aung%20Lin).pkt) 
 
@@ -19,7 +20,8 @@ According to this lab, we want to make a connection between PC_0 and PC_1 and we
 
 # Day 2 (RIP Route - RIPv2 Authentication - Accesslist)
 
-![Day 2 UI](https://github.com/Htin2001/CCNP-Enterprise/blob/c6020fc5813872bd6a2583025fe942d92ed83612/RIPv2.png)
+<img width="857" height="585" alt="RIPv2" src="https://github.com/user-attachments/assets/dea83b62-38a2-449a-b07a-15113493f9ed" />
+
 
 **Download Lab File (Eve File)**
 [Day 2 RIP - RIPv2 Authentication Lab](https://github.com/Htin2001/CCNP-Enterprise/blob/f4fb155d218f9d45e06e026d102d81d34ddd4847/RIP%20_%20RIPv2%20Authenticatioin%20Lab.zip)
@@ -41,13 +43,8 @@ On day 2, we discussed about the details of RIP routing protocol.
 
 `show ip protocol (Checking which routing protocol is running on routers)`
 
-<table>
-  <tr>
-    <td style="border:20px double black; padding:6px;">
-      <img src="Sending updates every 30 seconds, next due in 4 seconds.heic" alt="Topology">
-    </td>
-  </tr>
-</table>
+![tempImageSzfTnW](https://github.com/user-attachments/assets/a6e3ec5b-7826-44b8-8614-1d83424bab9c)
+
 
 - Invalid after = hold down = flushed after = 240 sec means that RIP routing status will be updated only after 240 sec even RIP protocol is down under 240 sec. But we can change by following command but **set the commend in both routers**.
 
@@ -136,7 +133,8 @@ For Interfaces between each router
 
 # Day 3 (Controlling Routing Updates | Distribute List) 
 
-![Day 3 Controlling Redistribution with distribute-list](https://github.com/Htin2001/CCNP-Enterprise/blob/ac53708250521983b20588c1b597374d99b0bee8/Controlling%20Redistribution%20with%20distribute-list.png)
+<img width="935" height="272" alt="Controlling Redistribution with distribute-list" src="https://github.com/user-attachments/assets/40726cef-57a4-42dd-82a4-4a4f1c8945b1" />
+
 
 **Download Lab File (EVE file)** 
 [Day 3 Controlling Redistribution with distribute-list](https://github.com/Htin2001/CCNP-Enterprise/blob/678ac8f726fb874fc1ce9ed3e941493a32d56d95/Controlling%20redistribution%20with%20distribute-list.zip)
@@ -166,7 +164,8 @@ For Interfaces between each router
 - Policy Based Routing
 
 
-![Day 3 UI - Redistribution Loops](https://github.com/Htin2001/CCNP-Enterprise/blob/c3e0197f392ae54916823307181ac9c92c81af79/redistribution%20loops%20.png)
+<img width="561" height="351" alt="redistribution loops " src="https://github.com/user-attachments/assets/e3cba835-d1be-45dd-b0d4-78660d2eedf7" />
+
 
 
 **Passive Interface in EIGRP**
@@ -191,9 +190,11 @@ For Interfaces between each router
 - Use with **an access list or route map or prefix-list** to permit or deny routes
 - Can be applied to **transmitted, received, or redistributed routing updates**
 
-![Day 3 Filtering Routing Updates with a Distribute List](https://github.com/Htin2001/CCNP-Enterprise/blob/7814a477e2f2bd14b402f9ba0e97ed768f3bef55/Filtering%20routing%20updates%20with%20a%20distributed%20list.png)
+<img width="597" height="348" alt="Filtering routing updates with a distributed list" src="https://github.com/user-attachments/assets/a23c97c9-5050-4225-94c1-43f61ec97dfe" />
 
-![Day 3 Controlling Redistribution with distribute-list](https://github.com/Htin2001/CCNP-Enterprise/blob/dc83ccc43c2d7f1239dacf597eac8a0b9f84febc/Controlling%20Redistribution%20with%20Distribute%20lists%20.png)
+
+<img width="1268" height="690" alt="Controlling Redistribution with Distribute lists " src="https://github.com/user-attachments/assets/085f4591-0756-45db-8236-e8ea44282cfb" />
+
 
 - According to the upper Redistribution diagram, Router B is processing on redistribion which means it has both RIP and OSPF routes.
 - If you want filter some routes in **OSPF** which going to RIP,the flow will
@@ -243,7 +244,8 @@ For Interfaces between each router
 
 **Prefix-list**
 
-![Day 4 prefix-list](https://github.com/Htin2001/CCNP-Enterprise/blob/125e6fd01ccb493c4c41022abe53839ddab3a0d1/prefix-list.png)
+<img width="997" height="315" alt="prefix-list" src="https://github.com/user-attachments/assets/d829da9c-f1be-40d3-a93e-def7dc1923e1" />
+
 
 **Download prefix-list lab file (EVE file)**
 
@@ -271,7 +273,8 @@ For Interfaces between each router
 
 **Offset-list**
 
-![Day 4 Offset-list](https://github.com/Htin2001/CCNP-Enterprise/blob/8dfccaa0fe9bcb5f07a4cf47238e0d96e6d35515/Offset-list.png)
+<img width="1156" height="402" alt="Offset-list" src="https://github.com/user-attachments/assets/1d68af06-1c12-4863-857b-04a0711946d7" />
+
 
 **Download offset-list Lab (EVE file)** 
 
