@@ -380,6 +380,7 @@ For Interfaces between each router
 - **Match** criteria used with **ACL & Prefix-list** while **set** criteria used with **action**
 - The common uses of route-maps are as follows:
   - Redistribution route filtering
+    <img width="902" height="447" alt="image" src="https://github.com/user-attachments/assets/7387e645-418d-43de-8595-9d5b1bd01030" />
   - Policy-based routing
   - BGP policy implementation
 
