@@ -368,16 +368,35 @@ For Interfaces between each router
 
 
 
+# Day 5 (Route Map) 
+
+
+**Route Map** 
+
+- They offer top-down processing
+- Lines are sequence-numbered for easier editing
+- Route maps are named rather than numbered for easier documentation
+- Match criteria and set criteria can be used, similar to the “if, then” logic in a scripting      language
+- **Match** criteria used with **ACL & Prefix-list** while **set** criteria used with **action**
+- The common uses of route-maps are as follows:
+  - Redistribution route filtering
+  - Policy-based routing
+  - BGP policy implementation
 
 
 
 
 
+----------------------------------------
+**Route-Map Command**
 
+`route-map (name) permit (route-map's sequential number)`
 
+`match ip add (access-list's number)`
 
+`set (.....)` 
 
-
+- (....) has `metric (metric number)` / `ip next hop (next-hop ip)` / `interface (interface_name)` 
 
 
 
