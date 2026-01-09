@@ -394,6 +394,13 @@ For Interfaces between each router
     - `redistribute rip subnets route-map (route-map's name)`
 
   - Policy-based routing
+
+    **Download PBR Lab File (EVE File)**
+ 
+    [Day 5 PBR Lab File]
+
+    <img width="696" height="472" alt="image" src="https://github.com/user-attachments/assets/19e58a7c-a95b-4813-933f-94adac9a4ee4" />
+
     
     - It is used for implementing policy that cause the packet to take a different direction
     - PBR allows **source** based routing
@@ -402,8 +409,8 @@ For Interfaces between each router
         - Different users can go from different directions
         - Load sharing
         - PBR will implemented on the **incoming direction of the source interface**
-        - If the packet is match in the route map and it is permit it will be send according to            the policy which means that **route-map uses only with permit action**
-        - If the packet is match in the route map and route map deny packet will be forwarded              according to normal routing table
+        - If the packet is match in the route map and it is permit it will be send according to the policy which means that **route-map uses only with permit                action**
+        - If the packet is match in the route map and route map deny packet will be forwarded according to normal routing table
 
   
   - BGP policy implementation
