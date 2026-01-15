@@ -472,6 +472,8 @@ For Interfaces between each router
 - Administrative distance = 10
 - Load balancing via 4 equal cost paths by default (unequal cost load balancing not supported)
 - Hierarchical network design using Areas
+- Using RTP (Reliable Transport Protocol : 89)
+- All the routers must have the same database
 
 
 <details>
@@ -634,6 +636,72 @@ For Interfaces between each router
 
 </details> 
 
+<details> 
+<summary> <strong> OSPF Network Type </strong></summary>
+ 
+- Broadcast Multi Access Network (Hello = 10 , Dead = 40) (DR/BDR election)
+  
+  <img width="300" height="250" alt="image" src="https://github.com/user-attachments/assets/126d7d97-e8cd-47ae-9461-da4e108ca63c" />
 
+  - LAN technologies like Ethernet and Token Ring
+  - DR and BDR selection are required
+  - OSPF detects this type of link automatically
+  - All neighbor routers form full adjacencies with the DR and BDR only which means that DR_others don't make neighbor by themself
 
+- Point to Point (Hello = 10 , Dead = 40)
+- NBMA (Hello = 30 , Dead = 120) (DR/BDR election)
+- Point to multipoint (Hello = 30 , Dead = 120)
+- Point to multipoint non broadcast (Hello = 30 , Dead = 120)
 
+- In OSPF, define Network Type depending on the using of interface/Cable like :
+    - Broadcast (Ethernet Interface = E0/0, fa0/0, Gi0/0, TenG0/0,……)
+    - Point to point (Serial Interface)
+ 
+</details>
+
+<details> 
+<summary> <strong> DR / BDR Election  </strong></summary>
+ 
+- Reducing neighbor numbers flooding in one OSPF area
+
+<img width="250" height="200" alt="image" src="https://github.com/user-attachments/assets/a52bc923-d5f6-4422-a689-6b110fd1b08a" />
+
+- There are 56 neighbors
+
+<img width="250" height="200" alt="image" src="https://github.com/user-attachments/assets/487ad22a-ca93-42ea-bc71-b7de3978eec9" />
+
+- After that there will be 14 neightbor in total
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/c688a9ba-3670-4b50-9589-df15483fd8d9" />
+
+- Closing DR / BDR on both routers according to the following image
+  - Priority 0
+  - P2P
+- DR others to DR is using multicast address (224.0.0.6)
+- DR to DR others is using multicast address (224.0.0.5)
+- The router having highest priority is DR (0 - 255)
+    - Checking inside the neighbor table
+
+    `sh ip ospf neighbor` 
+      
+- The router with second-highest priority is BDR
+- The default priority value is 1
+- In the case of a tie, router with highest router ID is DR second highest router ID becomes the BDR
+- If router priority is 0 it cannot become the DR or BDR
+- Router which is not a DR or BDR is called as DROTHER
+- DR & BDR election is not preemptive which means that when DR is down > BDR becomes DR. When DR is up > BDR still left as DR.
+- Changing priority
+
+`interface (type) (no)`
+
+`ip ospf priority (0-255)` 
+
+- DR / BDR Elections Neighbors
+    - DR / BDR > DROTHER > Full
+    - DROTHER > DR / BDR > Full
+    - DROTHER > DROTHER > 2-Way
+- Updates
+    - DROTHER > DR / BDR > 224.0.0.6
+    - DR > DROTHER > 224.0.0.5
+
+</details>
